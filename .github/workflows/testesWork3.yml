@@ -1,6 +1,7 @@
 name: Testes Works 3
 
 on: 
+  push:
   schedule:
     - cron: "*/1 * * * *"
 
