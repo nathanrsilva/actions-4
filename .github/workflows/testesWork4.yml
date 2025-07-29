@@ -22,15 +22,3 @@ jobs:
         steps: 
             - name: Deploy ${{matrix.os_run}}
               run: echo "fazendo deploy no ${{matrix.os_run}} usando imagem ${{matrix.image_run}}"
-
-    # deploy_on_ubuntu:
-    #     runs-on: ubuntu-latest
-    #     steps:
-    #         - name: Deploy Ubuntu
-    #           run: echo "fazendo deploy on ubuntu system"
-
-    # deploy_on_windows:
-    #     runs-on: windows-latest
-    #     steps:
-    #         - name: Deploy Windows
-    #           run: echo "fazendo deploy on windows system"
