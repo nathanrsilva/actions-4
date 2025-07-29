@@ -6,6 +6,9 @@ on:
 jobs:
     print_console:
         runs-on: ubuntu-latest
+        concurrency:
+            group: mensagens
+            cancel-in-progress: true
         steps:
             - name: Print
               run: echo Ta clipando?
