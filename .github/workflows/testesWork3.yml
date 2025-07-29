@@ -1,9 +1,9 @@
 name: Testes Works 3
 
 on: 
-  push:
-  schedule:
-    - cron: "*/1 * * * *"
+    workflow_dispatch:
+    schedule:
+        - cron: "*/1 * * * *"
 
 jobs:
     print_console:
