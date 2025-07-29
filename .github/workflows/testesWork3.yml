@@ -1,0 +1,12 @@
+name: Testes Works 3
+
+on: 
+  schedule:
+    - cron: "1 * * * *"
+
+jobs:
+    print_console:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print
+              run: echo Ta clipando?
