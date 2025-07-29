@@ -3,9 +3,9 @@ name: Testes Works 4
 on: workflow_dispatch
 
 jobs:
-
     deploy:
         strategy:
+          max-parallel: 1
           matrix:
             os_run: ["ubuntu-latest", "windows-latest"]
             image_run: ["pirate", "safira"]
