@@ -2,8 +2,6 @@ name: Testes Works 3
 
 on: 
     workflow_dispatch:
-    schedule:
-        - cron: "*/1 * * * *"
 
 jobs:
     print_console:
@@ -11,3 +9,8 @@ jobs:
         steps:
             - name: Print
               run: echo Ta clipando?
+
+            - name: Mensagem de Sucesso
+              run: |
+                echo "Tudo certinho1"
+                sleep 600s
