@@ -5,6 +5,7 @@ on: workflow_dispatch
 jobs:
     deploy:
         strategy:
+          fail-fast: false
           matrix:
             os_run: [ubuntu-latest, windows-latest]
             image_run: [hello-world, alpine]
