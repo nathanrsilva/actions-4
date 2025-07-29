@@ -10,6 +10,7 @@ jobs:
               run: echo Games Like Stardew Valley >> game.txt
 
     ler_arquivo:
+        needs: criar_arquivo
         runs-on: ubuntu-latest
         steps:
             - name: Read File
