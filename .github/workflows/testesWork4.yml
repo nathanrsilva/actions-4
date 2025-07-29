@@ -10,6 +10,10 @@ jobs:
             os_run: ["ubuntu-latest", "windows-latest"]
             image_run: ["pirate", "safira"]
 
+            include:
+              - image_run: "mosh"
+                os_run: ubuntu-latest
+
         runs-on: ${{matrix.os_run}}
         steps: 
             - name: Deploy ${{matrix.os_run}}
