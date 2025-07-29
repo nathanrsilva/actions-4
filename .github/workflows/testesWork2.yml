@@ -1,0 +1,16 @@
+name: Testes Works 2
+
+on: workflow_dispatch
+
+jobs:
+    criar_arquivo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Create File
+              run: echo Games Like Stardew Valley >> game.txt
+
+    ler_arquivo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Read File
+              run: cat game.txt
