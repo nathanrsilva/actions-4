@@ -2,7 +2,7 @@ name: Testes Works 3
 
 on: 
   schedule:
-    - cron: "0/1 * * * *"
+    - cron: "*/1 * * * *"
 
 jobs:
     print_console:
