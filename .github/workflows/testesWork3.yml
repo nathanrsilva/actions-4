@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         concurrency:
             group: mensagens
-            cancel-in-progress: true
+            cancel-in-progress: false
         steps:
             - name: Print
               run: echo Ta clipando?
@@ -16,4 +16,4 @@ jobs:
             - name: Mensagem de Sucesso
               run: |
                 echo "Tudo certinho1"
-                sleep 600s
+                sleep 40s
